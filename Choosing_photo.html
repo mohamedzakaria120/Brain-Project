@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ='description' content="">
+    <title>Brain Tumor</title>
+<style>
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #222;
+
+}
+form {
+           width: 100%;
+            max-width: 1200px;
+            background-color: #111;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+            transition: box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 1s ease-out;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+h6 {
+    font-size: 30px;
+    background-color: rgb(140, 176, 186);
+}
+#img{
+           margin: 20px 0;
+            padding: 10px;
+            border: 2px solid #00adb5;
+            border-radius: 4px;
+            background-color: #222;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+            transition: border-color 0.3s;
+            width: calc(50% - 20px);
+}
+label{
+  color:#000000;
+  font-size: 30px;
+    background-color:#00adb5;
+}
+
+</style>
+</head>
+
+<body>
+
+<form name="form1" action="choosing_photo.php" method="post" enctype="multipart/form-data">
+  <hr><br>
+    <label for="img">Add Image</label>
+    <input id="img" type="file" name="f1" required="" />
+    <label for="img">Add Name</label>
+    <hr>
+    <input type="text" placeholder="Enter Full Name" name="name" autocomplete="off" >
+<hr>
+    <br>
+    <input type="submit" name="sumbit1" value="Add">
+
+
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Login Page</title>
+  <style>
+    
+    body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('images/slider3.jpg');
+}
+
+.login-container {
+  text-align: center;
+  background-image: url('images/slider3.jpg');
+  border-radius: 20px;
+  width: 500px;
+
+}
+
+
+
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 300px;
+  
+}
+h1{
+  color:rgb(0, 200, 255);
+  font-size: 20px;
+  
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #0f0e0e;
+  font-size: 45px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100px;
+}
+
+button:hover {
+  background-color:red
+
+}
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>𝐿𝑜𝑔𝐼𝓃</h2>
+    <form action="login.php" method="post">
+
+      <form class="login-form">
+      
+        <?php
+        if (isset($mob_error)){
+         echo $mob_error;
+        }
+        ?>
+        <label for="mobile"> Phone Number:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+        
+        <?php
+        if (isset($pass_error)){
+         echo $pass_error;
+        }
+        ?>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit" name="login">Login</button>
+       <br><br><hr><br>
+      </form>
+    </form>
+  </div>
+
+       <!-- SCRIPTS -->
+       <script src="js/jquery.js"></script>
+       <script src="js/bootstrap.min.js"></script>
+       <script src="js/jquery.sticky.js"></script>
+       <script src="js/jquery.stellar.min.js"></script>
+       <script src="js/wow.min.js"></script>
+       <script src="js/smoothscroll.js"></script>
+       <script src="js/owl.carousel.min.js"></script>
+       <script src="js/custom.js"></script>
+</body>
