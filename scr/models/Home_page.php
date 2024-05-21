@@ -178,7 +178,7 @@
 
     <section>
         <h2 id="disc">What is the Brain Tumor?</h2>
-        <video controls src="../videos/tumor brain.mp4" height="700" width="1000"></video>
+        <iframe width="1000" height="700" src="https://www.youtube.com/embed/JlpdFhxcqSI?si=VRFayhuL7cv3lssN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <p>
             Brain cancer is the proliferation of abnormal cells in brain tissue.
             Although it is common to call such tumors with a general and comprehensive name, which is brain tumors, not all of these tumors that originate in the brain are necessarily cancerous.
