@@ -72,7 +72,7 @@ label{
 
 <body>
 
-<form name="form1" action="choosing_photo.php" method="post" enctype="multipart/form-data">
+<form name="form1" action="choosing_photo2.php" method="post" enctype="multipart/form-data">
   <hr><br>
     <label for="img">Add Image</label>
     <input id="img" type="file" name="f1" required="" />

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include ('inc/connection.php');
+include ('../../DB/connection.php');
 
 if(isset($_POST['mobile']) && isset($_POST['password'])){
 
@@ -19,7 +19,7 @@ if(isset($_POST['mobile']) && isset($_POST['password'])){
     if(empty($password)){
         $pass_error = 'please enter password';
         $err_s = 1;
-        include('Log in page.html');
+        include('Log in page.php');
     }
 
     if (!isset($err_s)){
@@ -34,11 +34,11 @@ if(isset($_POST['mobile']) && isset($_POST['password'])){
             // Check for a specific mobile and password
             if ($row['character'] === 'doctor') {
                 // Redirect to the appropriate page for a doctor
-                header('location:patient_information.php');
+                header('location:patient_information2.php');
                 exit();
             }
                 elseif (($row['character'] === 'admin') ){
-                    header('location:signing up to doctors.html');
+                    header('location:signing up to doctors.php');
                     exit();
 
                 }
@@ -50,7 +50,7 @@ if(isset($_POST['mobile']) && isset($_POST['password'])){
             }
         }
         else {
-            header('location:Log in page.html');
+            header('location:Log in page.php');
             exit();
         }
     }

@@ -14,12 +14,12 @@
   height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url('images/slider3.jpg');
+  background-image: url('../images/slider3.jpg');
 }
 
 .login-container {
   text-align: center;
-  background-image: url('images/slider3.jpg');
+  background-image: url('../images/slider3.jpg');
   border-radius: 20px;
   width: 500px;
 
@@ -109,12 +109,12 @@ button:hover {
   </div>
 
        <!-- SCRIPTS -->
-       <script src="js/jquery.js"></script>
-       <script src="js/bootstrap.min.js"></script>
-       <script src="js/jquery.sticky.js"></script>
-       <script src="js/jquery.stellar.min.js"></script>
-       <script src="js/wow.min.js"></script>
-       <script src="js/smoothscroll.js"></script>
-       <script src="js/owl.carousel.min.js"></script>
-       <script src="js/custom.js"></script>
+       <script src="../js/jquery.js"></script>
+       <script src="../js/bootstrap.min.js"></script>
+       <script src="../js/jquery.sticky.js"></script>
+       <script src="../js/jquery.stellar.min.js"></script>
+       <script src="../js/wow.min.js"></script>
+       <script src="../js/smoothscroll.js"></script>
+       <script src="../js/owl.carousel.min.js"></script>
+       <script src="../js/custom.js"></script>
 </body>

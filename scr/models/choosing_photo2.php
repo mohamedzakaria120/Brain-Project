@@ -1,5 +1,5 @@
 <?php
-include "inc/connection1.php";
+include "../../DB/connection1.php";
 ?>
 
     
@@ -8,8 +8,8 @@ include "inc/connection1.php";
     {
         $tm=md5(time());
             $fnm=$_FILES["f1"]["name"];
-            $dst="./MRI_image/".$tm.$fnm;
-            $dst1="MRI_image/".$tm.$fnm;
+            $dst="../images/MRI_image/".$tm.$fnm;
+            $dst1="../images/MRI_image/".$tm.$fnm;
             move_uploaded_file($_FILES["f1"]["tmp_name"],$dst);
 
             $sql = mysqli_query($link, "INSERT INTO `images` (`youtube_image`, `name`) VALUES ('$dst1','$_POST[name]')");
@@ -17,7 +17,7 @@ include "inc/connection1.php";
                 ?>
     <script type="text/javascript">
         alert ("photo uploaded successfully");
-        window.location="Choosing_photo.html"
+        window.location="Choosing_photo1.php"
         </script>
     <?php
             }else{

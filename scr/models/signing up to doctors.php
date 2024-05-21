@@ -72,7 +72,7 @@ h2
 <body>
     <div id="message">
         <br><br>
-      <a id="seeing" title=" click her to see patients information" href="patient_information.php">see patients information</a>
+      <a id="seeing" title=" click her to see patients information" href="patient_information2.php">see patients information</a>
     </div>
     <div class="signup-container">
         <h2>𝓢𝓘𝓖𝓝 𝓤𝓟 𝓕𝓞𝓡 𝓓𝓞𝓒𝓣𝓞𝓡𝓢</h2>
@@ -113,13 +113,7 @@ h2
             <button type="submit" name="submit">Sign Up</button>
         </form>
     </div>
-    <div>
-        <?php
-        if (isset($user_error)&&isset(pass_error)){
-         echo $account;
-        }
-        ?>
-    </div>
+
     <br><hr>
 
 

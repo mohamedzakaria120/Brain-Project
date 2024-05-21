@@ -1,5 +1,5 @@
 <?php
-require_once 'inc/connection1.php';
+require_once '../../DB/connection1.php';
 $sql = "SELECT * from images";
 $all_images = $con->query($sql);
 
@@ -123,7 +123,7 @@ $all_images = $con->query($sql);
             <div>
                 <p class="image_name"> <?php echo $row["name"]; ?> </p>
             </div>
-            <button class="send">Send to Model</button>
+            
             <p class ="or">OR</p>
 
 

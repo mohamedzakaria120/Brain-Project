@@ -13,11 +13,11 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-image: url('images/slider3.jpg');
+            background-image: url('../images/slider3.jpg');
         }
 
         .container {
-            background-image: url('images/slider3.jpg');
+            background-image: url('../images/slider3.jpg');
             padding: 20px;
             border-radius: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -105,14 +105,14 @@
     </form>
     </div>
            <!-- SCRIPTS -->
-           <script src="js/jquery.js"></script>
-           <script src="js/bootstrap.min.js"></script>
-           <script src="js/jquery.sticky.js"></script>
-           <script src="js/jquery.stellar.min.js"></script>
-           <script src="js/wow.min.js"></script>
-           <script src="js/smoothscroll.js"></script>
-           <script src="js/owl.carousel.min.js"></script>
-           <script src="js/custom.js"></script>
+           <script src="../js/jquery.js"></script>
+           <script src="../js/bootstrap.min.js"></script>
+           <script src="../js/jquery.sticky.js"></script>
+           <script src="../js/jquery.stellar.min.js"></script>
+           <script src="../js/wow.min.js"></script>
+           <script src="../js/smoothscroll.js"></script>
+           <script src="../js/owl.carousel.min.js"></script>
+           <script src="../js/custom.js"></script>
 </body>
 </html>
 
