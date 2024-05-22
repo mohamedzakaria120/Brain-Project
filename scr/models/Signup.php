@@ -1,5 +1,11 @@
 <?php
-include ('inc/connection.php');
+$conn = new mysqli('localhost', 'root', "", 'patient');
+
+// التحقق من الاتصال
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
 
 if (isset($_POST['submit'])){
     $username = stripcslashes(strtolower($_POST['username']));
@@ -33,17 +39,17 @@ if (isset($_POST['submit'])){
     elseif (strlen($password) < 6){
         $pass_error = 'Your password needs to have at least 6 letters.?<br>';
         $err_s = 1;
-        include ('sign up page.html'); 
+        include ('sign up page.php'); 
     }
     else {
         if ($err_s == 0){
             $sql = "INSERT INTO users (username , address , password ,md5_pass, mobile , email)
             VALUES ('$username' , '$address', '$password','$md5_pass', '$mobile', '$email')";
             mysqli_query($conn, $sql);
-            header('location: Choosing_photo.html');
+            header('location: index.php');
         }   
         else {
-            include('sign up page.html'); 
+            include('sign up page.php'); 
         }
     }
 }

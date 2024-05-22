@@ -1,21 +1,24 @@
 <?php
-require_once '../../DB/connection.php';
+$conn = new mysqli('localhost', 'root', "", 'patient');
+
+// التحقق من الاتصال
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
 if(isset($_GET['image_id'])) {
     $image_id = $_GET['image_id'];
     
     // عملية حذف الصورة من قاعدة البيانات
     $sql = "DELETE FROM images WHERE id = $image_id";
-    if($con->query($sql) === TRUE) {
+    if($conn->query($sql) === TRUE) {
         echo '<script type="text/javascript">
-        alert("image created successfully");
+        alert("image deleted successfully");
         window.location="patient_information2.php";
       </script>';
-        
-
     } else {
         // حدث خطأ أثناء العملية
-        echo "حدث خطأ أثناء محاولة حذف الصورة: " . $con->error;
+        echo " ERROR " . $conn->error;
     }
 }
 ?>
