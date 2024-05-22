@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 26, 2024 at 01:25 PM
+-- Generation Time: May 22, 2024 at 05:20 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,18 @@ SET time_zone = "+00:00";
 --
 -- Database: `patient`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `images`
+--
+
+CREATE TABLE `images` (
+  `id` int(100) NOT NULL,
+  `youtube_image` varchar(1000) NOT NULL,
+  `name` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -68,11 +80,18 @@ INSERT INTO `users` (`id`, `username`, `address`, `password`, `md5_pass`, `mobil
 (1, 'mohamed zakaria', 'benha', '3112002', '10860978db2a5bb48f53ec3fd817d91a', '01229594210', 'ali@gmail.com', 'admin', ''),
 (2, 'ali12345', 'tanta', '01011866950', 'ae783d242f90ccd334d03173af2ac22c', '01011866950', 'sss@120', '', ''),
 (7, 'asd252525', 'Giza', '01212121211', 'ac962138ff472efc92651950cd5985eb', '012121212', 'ali@gmail.com', '', ''),
-(8, 'hassan', 'cairo', '0000000', '29c3eea3f305d6b823f562ac4be35217', '01230123', 'hhh@0123', 'doctor', '');
+(8, 'hassan', 'cairo', '0000000', '29c3eea3f305d6b823f562ac4be35217', '01230123', 'hhh@0123', 'doctor', ''),
+(15, 'hesham', 'sasa', '112002', '9884bfb6c4e8914720829708e508f822', '0123456789', 'bv124@gmail.com', 'doctor', '');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `images`
+--
+ALTER TABLE `images`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `results`
@@ -91,16 +110,22 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `images`
+--
+ALTER TABLE `images`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `results`
 --
 ALTER TABLE `results`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

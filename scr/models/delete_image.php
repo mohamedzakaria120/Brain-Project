@@ -1,5 +1,5 @@
 <?php
-require_once '../../DB/connection1.php';
+require_once '../../DB/connection.php';
 
 if(isset($_GET['image_id'])) {
     $image_id = $_GET['image_id'];
