@@ -13,11 +13,11 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-image: url('../images/slider3.jpg');
+            background-image: url('https://res.cloudinary.com/dea9af0nj/image/upload/v1716318666/grad_project/soqgbvwhrf3isjcsnilf.jpg');
         }
 
         .container {
-            background-image: url('../images/slider3.jpg');
+            background-image: url('https://res.cloudinary.com/dea9af0nj/image/upload/v1716318666/grad_project/soqgbvwhrf3isjcsnilf.jpg');
             padding: 20px;
             border-radius: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

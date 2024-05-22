@@ -14,12 +14,12 @@
   height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url('../images/slider3.jpg');
+  background-image: url('https://res.cloudinary.com/dea9af0nj/image/upload/v1716318666/grad_project/soqgbvwhrf3isjcsnilf.jpg');
 }
 
 .login-container {
   text-align: center;
-  background-image: url('../images/slider3.jpg');
+  background-image: url('https://res.cloudinary.com/dea9af0nj/image/upload/v1716318666/grad_project/soqgbvwhrf3isjcsnilf.jpg');
   border-radius: 20px;
   width: 500px;
 

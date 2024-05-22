@@ -35,18 +35,50 @@ $result = $conn->query($sql);
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: rgb(252, 245, 245);
+        background-color: #222;
+        color: #333;
     }
     .container {
         max-width: 800px;
         margin: 20px auto;
         padding: 20px;
         background-color: #fff;
-        border-radius: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     h2 {
         text-align: center;
+        margin-bottom: 20px;
+        color:  #00adb5;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    form label {
+        font-weight: bold;
+    }
+    form input[type="text"], form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    form input[type="submit"] {
+        width: 100px;
+        padding: 10px;
+        background-color:  #00adb5;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        align-self: flex-start;
+    }
+    form input[type="submit"]:hover {
+        background-color: #45a049;
     }
     table {
         width: 100%;
@@ -54,11 +86,21 @@ $result = $conn->query($sql);
         margin-top: 20px;
     }
     table, th, td {
-        border: 1px solid #ccc;
+        border: 1px solid #ddd;
     }
     th, td {
-        padding: 10px;
+        padding: 12px;
         text-align: left;
+    }
+    th {
+        background-color:  #00adb5;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    tr:hover {
+        background-color: #ddd;
     }
     .delete-btn {
         background-color: #f44336;

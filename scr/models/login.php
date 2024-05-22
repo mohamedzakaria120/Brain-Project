@@ -1,6 +1,10 @@
 <?php
-session_start();
-include ('../../DB/connection.php');
+$conn = new mysqli('localhost', 'root', "", 'patient');
+
+// التحقق من الاتصال
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
 if(isset($_POST['mobile']) && isset($_POST['password'])){
 

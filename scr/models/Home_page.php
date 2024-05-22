@@ -173,12 +173,12 @@
     </section>
 
     <section>
-        <img src="../images/photos/Brain Tumor.jpg" title="photos of brain tumor" alt="brain tumors" width="1000" height="400">
+        <img src="https://res.cloudinary.com/dea9af0nj/image/upload/v1716319038/grad_project/e8itspwyacwpuj8jylt5.jpg" title="photos of brain tumor" alt="brain tumors" width="1000" height="400">
     </section>
 
     <section>
         <h2 id="disc">What is the Brain Tumor?</h2>
-        
+        <iframe width="1000" height="700" src="https://www.youtube.com/embed/JlpdFhxcqSI?si=LyBJ3ztMJQZOBsri" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <p>
             Brain cancer is the proliferation of abnormal cells in brain tissue.
             Although it is common to call such tumors with a general and comprehensive name, which is brain tumors, not all of these tumors that originate in the brain are necessarily cancerous.
@@ -198,7 +198,7 @@
             </li>
         </ul>
         <section>
-            <video controls src="" width="1100" height="500"></video>
+        <iframe width="1110" height="500" src="https://www.youtube.com/embed/aR0Cx7j5p7E?si=ck-9ngOfmBT9NS5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
         <h3>Types of brain tumors :</h3>
         <ul>
@@ -232,7 +232,7 @@
 
     <section>
         <h2 id="Symptoms">Symptoms of brain tumor..?</h2>
-        <img src="../images/photos/tumors.jpg" width="900" height="400" alt="">
+        <img src="https://res.cloudinary.com/dea9af0nj/image/upload/v1716319038/grad_project/yuxr7vzzyctgs5s5t91p.jpg" width="900" height="400" alt="">
         <ul>
             <li><h4>Headache</h4></li>
             <li><h4>Weakness and emaciation</h4></li>
@@ -262,7 +262,7 @@
 
     <section>
         <h2 id="Complications">Complications of the disease</h2>
-        <img src="../images/photos/unnamed.jpg" width="900" height="500">
+        <img src="https://res.cloudinary.com/dea9af0nj/image/upload/v1716319046/grad_project/nu2yhxri1nnibmlhagrd.jpg" width="900" height="500">
         <ul>
             <li><h4>Depression</h4></li>
             <li><h4>Stuttering in speech</h4></li>

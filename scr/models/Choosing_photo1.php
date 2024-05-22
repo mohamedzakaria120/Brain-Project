@@ -41,7 +41,7 @@ label {
 
 input {
   width: 80%;
-  padding: 8px;
+  padding: 2px;
   margin-bottom: 15px;
   border-radius: 20px;
 }

@@ -1,7 +1,10 @@
 <?php
-include "../../DB/connection1.php";
-?>
+$conn = new mysqli('localhost', 'root', "", 'patient');
 
+// التحقق من الاتصال
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
     
     <?php
     if (isset($_POST["sumbit1"]))

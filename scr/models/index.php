@@ -16,7 +16,7 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: background-color: 0.3s ease;
         }
         .btn:hover {
             background-color: #45a049;
@@ -65,7 +65,7 @@
     <div id="slider">
         <div class="flexslider basicslider">
             <ul class="slides">
-                <li class="bgded" style="background-image:url('../images/738.jpg')">
+                <li class="bgded" style="background-image:url('https://res.cloudinary.com/dea9af0nj/image/upload/v1716318664/grad_project/j1pxigwqvl794unndmfs.jpg')">
                     <article class="flex-content">
                         <h2>Brain Tumor Classification</h2>
                         <br><hr><br><br>

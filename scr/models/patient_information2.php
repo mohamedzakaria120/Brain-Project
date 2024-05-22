@@ -1,5 +1,5 @@
 <?php
-require_once '../../DB/connection1.php';
+require_once '../../DB/connection.php';
 $sql = "SELECT * from images";
 $all_images = $con->query($sql);
 
@@ -97,7 +97,7 @@ $all_images = $con->query($sql);
         }
         #doc{
             width: 135px;
-            border-radius: 20px;
+            border-radius: 8px;
             
         }
 
@@ -124,7 +124,7 @@ $all_images = $con->query($sql);
                 <p class="image_name"> <?php echo $row["name"]; ?> </p>
             </div>
             
-            <p class ="or">OR</p>
+        
 
 
             <div class="container">
