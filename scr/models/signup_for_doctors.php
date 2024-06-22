@@ -1,5 +1,10 @@
 <?php
-include ('../../DB/connection.php');
+$conn = new mysqli('localhost', 'root', "", 'patient');
+
+// التحقق من الاتصال
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
 if (isset($_POST['submit'])){
     $username = stripcslashes(strtolower($_POST['username']));
@@ -9,6 +14,7 @@ if (isset($_POST['submit'])){
     $email = stripcslashes($_POST['email']);
     $character = stripcslashes($_POST['character']);
 
+    // استخدام mysqli_real_escape_string بعد التأكد من تعريف المتغير $conn
     $username = htmlentities(mysqli_real_escape_string($conn, $username));
     $address = htmlentities(mysqli_real_escape_string($conn, $address));
     $password = htmlentities(mysqli_real_escape_string($conn, $password));

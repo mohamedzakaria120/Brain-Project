@@ -28,7 +28,7 @@
         #sign, #login {
             margin: 5px 0;
             padding: 8px 20px;
-            width: 200px;
+            width: 100px;
             border-radius: 8px;
             font-size: 20px;
             font-weight: bold;
@@ -130,7 +130,7 @@
             margin: 20px 0;
         }
         #halfBar {
-            background-color: #4285f4;
+            background-color: #0a1d3b;
             color: #fff;
             padding: 10px 20px;
             border: none;
@@ -158,7 +158,7 @@
         <a id="login" title="click to log in" href="Log in page.php">Log In</a>
     </header>
 
-    <button id="halfBar" onclick="togglePageContent()">Page Content</button>
+    <button id="halfBar" onclick="togglePageContent()">Page Contents</button>
     
     <section id="pageContent" class="content" style="display: none;">
         <h2>Page Contents :</h2>

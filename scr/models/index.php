@@ -70,7 +70,7 @@
                         <h2>Brain Tumor Classification</h2>
                         <br><hr><br><br>
                         <p><font size="5">Classifying Brain Tumor</font><br></p>
-                        <p><a href="index.html" class="btn" style="margin:10px" width="200px">Uploading Photo</a></p>
+                        <p><a href="http://127.0.0.1:5000/" class="btn" style="margin:10px" width="200px">Uploading Photo</a></p>
                         <p><font size="5">OR</font><br></p>
                         <p>
                             <a href="Choosing_photo1.php" class="btn" style="margin:10px" width="200px">Sending To Doctor</a>

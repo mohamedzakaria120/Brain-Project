@@ -19,6 +19,28 @@ if (isset($_GET['delete_id'])) {
     echo '</script>';
 }
 
+// معالجة طلب الإدخال
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $patient_name = $_POST['patient_name'];
+    $report_date = $_POST['report_date'];
+    $classification = $_POST['classification'];
+    $treatment_plan = $_POST['treatment_plan'];
+
+    $stmt = $conn->prepare("INSERT INTO results (patient_name, report_date, classification, treatment_plan) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssss", $patient_name, $report_date, $classification, $treatment_plan);
+    if ($stmt->execute()) {
+        echo '<script type="text/javascript">';
+        echo 'alert("The report has been saved successfully!");';
+        echo 'window.location="report.php";';
+        echo '</script>';
+    } else {
+        echo '<script type="text/javascript">';
+        echo 'alert("Failed to save the report.");';
+        echo '</script>';
+    }
+    $stmt->close();
+}
+
 // عرض البيانات
 $sql = "SELECT id, patient_name, classification, report_date, treatment_plan FROM results";
 $result = $conn->query($sql);
@@ -126,7 +148,7 @@ $result = $conn->query($sql);
 
 <div class="container">
     <h2>Report about patient :</h2>
-    <form action="#" method="post">
+    <form action="report.php" method="post">
         <label for="patient_name">Patient Name:</label>
         <input type="text" id="patient_name" name="patient_name" required>
         

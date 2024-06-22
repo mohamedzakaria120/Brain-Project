@@ -57,7 +57,7 @@
         }
 
         button:hover {
-            background-color:brown
+            background-color:brown;
         }
        
     </style>
